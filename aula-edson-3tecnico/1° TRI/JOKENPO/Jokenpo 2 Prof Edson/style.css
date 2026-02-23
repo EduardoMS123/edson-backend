@@ -1,0 +1,16 @@
+*{
+    font-family: "Special Elite", Arial, sans-serif;
+}
+
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jogar{
+    border-radius: 3px;
+    background-color: rgb(86, 85, 85);
+    color: black;
+}
+  

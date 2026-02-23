@@ -16,7 +16,7 @@ const ligar = {
     'red': ()=> imagem.src = './img/gato-bravo.png',
     'yellow':()=> imagem.src = './img/gato-feliz.png',
     'green':()=> imagem.src = './img/gato-malvado.jpg',
-    'automatic':()=> idIntervalo = setInterval(mudarCor, 1500)
+    'automatic':()=> idIntervalo = setInterval(mudarCor, 500)
 }
 
 //muda as cores automaticamente
