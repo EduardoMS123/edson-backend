@@ -1,0 +1,42 @@
+*{
+    font-family: "Special Elite", Arial, sans-serif;
+    justify-items: center;
+    
+}
+
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jogar{
+    border-radius: 3px;
+    background-color: rgb(255, 0, 242);
+    color: black;
+    font-size: larger;
+}
+  
+.resetar{
+    border-radius: 3px;
+    background-color: rgb(255, 0, 242);
+    color: black;
+    font-size: larger;
+}
+
+#pc{
+    display: flex;
+    justify-items: center;
+}
+
+.jogar:hover{
+    cursor: pointer;
+    background-color: rgb(194, 2, 184);
+    color: white;
+}
+
+.resetar:hover{
+    cursor: pointer;
+    background-color: rgb(194, 2, 184);
+    color: white;
+}
