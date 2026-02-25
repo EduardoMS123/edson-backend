@@ -4,9 +4,11 @@ function jogar(){
        document.getElementById('tesoura').checked == false){
 
         alert("Por favor, selecione alguma coisa ai bro!!")
-    } else{
+    }
+    else{
         
         let sorteio = Math.floor(Math.random()*3);
+
         switch(sorteio){
             case 0 : document.getElementById('pc').src="pcpedra.png";
                 break;
@@ -15,13 +17,27 @@ function jogar(){
             case 2 : document.getElementById('pc').src="pctesoura.png";
                 break;
         }
-    }
+    
 
     if((document.getElementById("pedra").checked == true && sorteio ==0)
         ||(document.getElementById("papel").checked == true && sorteio ==1)
-        ||(document.getElementById("tesoura").checked == true && sorteio ==2)){
-
+        ||(document.getElementById("tesoura").checked == true && sorteio ==2))
+        {
+              document.getElementById("placar").innerHTML = "EMPATE!!!";
     }
+    else if((document.getElementById("pedra").checked == true && sorteio == 2)
+            ||(document.getElementById("papel").checked == true && sorteio == 0)
+            ||(document.getElementById("tesoura").checked == true && sorteio == 1))
+            {
+                document.getElementById("placar").innerHTML = "Você ganhou seu safadinho!";
+    }
+    else{
+        document.getElementById("placar").innerHTML = "GANHEI HAHAHAHAHA!!";
+    }
+    }
+}
 
-
+function resetar(){
+    document.getElementById("pc").src="pc.png";
+    document.getElementById("placar").innerHTML=" ";
 }
