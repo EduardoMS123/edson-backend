@@ -1,7 +1,7 @@
 *{
     font-family: "Special Elite", Arial, sans-serif;
     justify-items: center;
-    
+    justify-content: center;
 }
 
 .special-elite-regular {
@@ -12,31 +12,13 @@
 
 .jogar{
     border-radius: 3px;
-    background-color: rgb(255, 0, 242);
-    color: black;
     font-size: larger;
-}
-  
-.resetar{
-    border-radius: 3px;
-    background-color: rgb(255, 0, 242);
+    background-color: rgb(86, 85, 85);
     color: black;
-    font-size: larger;
 }
 
 #pc{
     display: flex;
-    justify-items: center;
+    justify-content: center;
 }
-
-.jogar:hover{
-    cursor: pointer;
-    background-color: rgb(194, 2, 184);
-    color: white;
-}
-
-.resetar:hover{
-    cursor: pointer;
-    background-color: rgb(194, 2, 184);
-    color: white;
-}
+  
