@@ -1,0 +1,26 @@
+/*let coisas = [10,20,30,40,50];
+  //valores    0,  1,  2,  3,  4  
+
+for(let i=0; i<coisas.length; i++){
+    console.log("Elemento " + coisas[i]);
+}
+*/
+let matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+for(let i=0; i<matriz.length; i++){
+    for(let j=0; j<matriz[i].length; j++){
+        console.log(matriz[i][j])
+    }
+
+}
+
+
+
+
+
+
+
