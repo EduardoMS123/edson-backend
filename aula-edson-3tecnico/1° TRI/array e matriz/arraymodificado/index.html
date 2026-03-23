@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Array</title>
+</head>
+<body>
+    <h2>Carrinho de Compras</h2>
+    <input type="text" id="nome" placeholder="Digite um Produto...">
+    <ul>
+        <li>Laranja</li>
+        <li>Morango</li>
+        <li>Banana</li>
+    </ul>
+    <div>
+        <button onclick="adicionar()">Adicionar</button>
+        <button onclick="mostrar()">Mostrar Carrinho</button>
+    </div>
+    <p id="resultado"></p>
+    <ul id="lista"></ul>
+    <script>
+        let frutas = [];
+        let morango = 2
+        let laranja = 3
+        let limao = 4
+
+        function adicionar(){
+           let fruta = document.getElementById("nome").value
+           if (fruta != ""){
+            calcularpreco()
+            frutas.push(fruta);
+            document.getElementById("nome").value = ""
+            console.log(frutas)
+           }else{
+            alert("coloque algo por favor")
+           }
+        }
+
+        function mostrar(){
+            let texto = "Frutas no Carrinho: <br>"
+            for(let i = 0; i<frutas.length;i++){
+                texto += frutas[i] + "<br>"
+            }
+            document.getElementById('resultado').innerHTML = texto;
+        }
+
+        function calcularpreco(){
+            if(fruta == "morango"){
+                let item = document.createElement("li");
+                item.innerText = oi;
+                lista.appendChild(item);
+            }
+        
+        }
+
+        
+
+    </script>
+
+</body>
+
+
+</html>

@@ -29,3 +29,20 @@ function resetar(){
     document.getElementById("pc").src="pc.png";
     document.getElementById("resultado").innerHTML="----";
 }
+
+if('serviceWork' in navigator){
+    window.addEventListener('load', ()=>{
+        navigator.serviceWorker.register('sw.js').then(()=>console.log('Servicve Worker Registradissimo!')).catch(err=>console.log('Erro',err));
+    });
+
+}
+
+
+
+
+
+
+
+
+
+
