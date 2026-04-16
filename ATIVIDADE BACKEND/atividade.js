@@ -163,22 +163,85 @@ let array2 = ["Limão","Maçã","Ameixa","Uva","Banana"]
 console.log(array2[0])
 
 
+//==============TERNÁRIO================//
+//1. VERIFIQUE SE UM NUMERO É POSITIVO OU NÃO
+let numero = 5;
+let resultado = numero > 0 ? "Positivo" : "Negativo";
+console.log(`O número ${numero} é ${resultado}`);
+
+/*2. VERIFIQUE SE UMA PESSOA PODE VOTAR
+ - SE SIM, RETORNE "PODE VOTAR", SE NÃO, "NÃO PODE VOTAR"*/
+let idade1 = 11
+let pode_ou_nao = idade1 >= 16 ? "pode votar!" : "não pode votar!"
+console.log(`a pessoa com ${idade1} anos ${pode_ou_nao}`)
+
+/*3. DESCUBRA SE UM NÚMERO É PAR OU IMPAR
+ - SE PAR, RETORNE "PAR", SE IMPAR, RETORNE "IMPAR"*/
+ let num3 = 12
+ let verifica = num3%2 === 0 ? "par" : "impar"
+ console.log(`o número ${num3} é ${verifica}`)
+
+/*4. CRIE UMA VERIFICAÇÃO DE NIVEL DE ACESSO
+ SE NIVEL FOR ADMIN, RETORNE "ACESSO TOTAL"
+ CASO CONTRÁRIO, "ACESSO RESTRITO"*/
+ let tipo = "Admin"
+ let acesso = tipo === "Admin" ? "Total" : "Restrito"
+ console.log(`o seu tipo é ${tipo}, então você tem acesso ${acesso}`)
+
+/*EXERCÍCIO 5 (Médio-Fácil)
+Aplique desconto em um produto.
+- Se preço > 100, aplique 10% de desconto (multiplicar por 0.9)
+- Caso contrário, mantenha o preço original*/
+let preco = 99.0
+let descontinho = preco > 100 ? console.log(`o preço é ${preco}, você ganhou desconto de 10%, o preço fica ${preco*0.9}`) :
+console.log(`o preço é menor que 100, então você não tem desconto`)
 
 
+/*EXERCÍCIO 6 (Médio-Fácil)
+Classifique a situação do aluno baseado na média.
+- Se nota >= 7, retorne "Aprovado"
+- Caso contrário, "Reprovado"*/
+let nota = 7;
+let decisao = nota >= 7 ? "Aprovado" : "Reprovado";
+console.log(`A nota é ${nota}, o aluno foi ${decisao}`);
 
 
+/*EXERCÍCIO 7 (Médio)
+Verifique se um número é par E maior que 10.
+- Se sim, retorne "Atende critérios"
+- Se não, "Não atende"*/
+let num4 = 8
+let verifica1 = num4%2 === 0 & num4 > 10 ? "Atende os Critérios" : "Não atende os critérios"
+console.log(`o número ${num4} ${verifica1}`)
 
 
+/*EXERCÍCIO 8 (Médio)
+Classifique o número em positivo, negativo ou zero.
+- Se > 0: "Positivo"
+- Se < 0: "Negativo"
+- Se = 0: "Zero"*/
+let num5 = 0;
+let resultado1 = num5 > 0 ? "Positivo" : num5 < 0 ? "Negativo" : "Zero";
+console.log(`O número ${num5} é ${resultado1}`);
 
+/*EXERCÍCIO 9 (Médio)
+Simule um login simples.
+- Se usuario for "admin" E senha for "123", retorne "Login OK"
+- Caso contrário, "Falha no login"*/
+let usuario = "admin"
+let senha = "123"
+let login = usuario === "admin" & senha === "123" ? "Login OK" : "Falha no login"
+console.log(`você colocou o usuario como: //${usuario}// e a senha como: //${senha}//... ${login}`)
 
-
-
-
-
-
-
-
-
+/*EXERCÍCIO 10 (Médio)
+Classifique a pessoa por idade:
+- Menor que 12: "Criança"
+- Entre 12 e 17: "Adolescente"
+- Entre 18 e 59: "Adulto"
+- 60 ou mais: "Idoso"*/
+let idade2 = 90;
+let verificadorIdade = idade2 < 12 ? "Criança" : idade2 <= 17 ? "Adolescente" : idade2 <= 59 ? "Adulto" : "Idoso";
+console.log(`A pessoa com ${idade2} anos, é ${verificadorIdade}`);
 
 
 
