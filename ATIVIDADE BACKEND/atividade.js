@@ -240,9 +240,65 @@ Classifique a pessoa por idade:
 - Entre 18 e 59: "Adulto"
 - 60 ou mais: "Idoso"*/
 let idade2 = 90;
-let verificadorIdade = idade2 < 12 ? "Criança" : idade2 <= 17 ? "Adolescente" : idade2 <= 59 ? "Adulto" : "Idoso";
+let verificadorIdade = idade2 < 12 ? "Criança" : 
+idade2 <= 17 ? "Adolescente" : 
+idade2 <= 59 ? "Adulto" : "Idoso";
 console.log(`A pessoa com ${idade2} anos, é ${verificadorIdade}`);
 
+// ==================== ATIVIDADES COM OBJETOS ====================
 
+// 51: Crie um objeto pessoa com nome "Ana" e idade 25
+let pessoa = {
+    nome : "Ana",
+    idade : 25
+};
+console.log(pessoa);
+
+
+// 52: Acesse e exiba o nome do objeto {nome: "Carlos", cidade: "São Paulo"}
+let pessoa1 = {
+    nome: "Carlos",
+    cidade: "São Paulo"
+}
+console.log(pessoa1.nome)
+
+
+// 53: Adicione a propriedade "curso" ao objeto {nome: "Maria", idade: 20}
+let estudante = {
+    nome: "Maria",
+    idade: 20
+}
+console.log("Antes", estudante)
+estudante.curso = "Matemática"
+console.log("Depois", estudante)
+
+
+// 54: Altere a idade do objeto {nome: "João", idade: 18} para 19
+let usuario1 = {
+    nome: "João", 
+    idade: 18
+}
+console.log("Antes", usuario1)
+usuario1.idade = 19
+console.log("Depois", usuario1)
+
+// 55: Remova a propriedade "telefone" do objeto {nome: "Pedro", telefone: "99999-9999"}
+let usuario2 = {
+    nome: "Pedro", 
+    telefone: "99999-9999"
+}
+console.log("Antes", usuario2)
+delete usuario2.telefone
+console.log("Depois", usuario2)
+
+// 56: Exiba todas as propriedades do objeto {marca: "Nike", tamanho: 42, cor: "preto"}
+
+// 57: Crie um objeto cachorro com nome "Rex" e um método latir que exibe "Au au!"
+
+// 58: Crie um objeto aluno com nome "Lucas" e notas [8, 7, 9]
+
+// 59: Crie um objeto carro com marca "Fiat" e um objeto motor com potencia "1.0"
+
+// 60: Crie um array com 3 objetos de produtos (nome e preço) e exiba todos
 
 
