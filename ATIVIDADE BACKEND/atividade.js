@@ -154,13 +154,63 @@ else{
 }
 
 //================= atividades array =================//
-//27. crie um array com os numeros 10,20,30,40 e exiba todos
-let array1 = [10, 20, 30, 40]
-console.log(array1)
+// 31: Crie um array com os números 10, 20, 30, 40 e exiba todos
+let arr1 = [10,20,30,40];
+console.log(arr1)
 
-//28. crie um array com 5 frutas e exiba a primeira
-let array2 = ["Limão","Maçã","Ameixa","Uva","Banana"]
-console.log(array2[0])
+// 32: Crie um array com 5 frutas e exiba a primeira fruta
+let frutas = ["maça","banana","laranja","uva","manga"];
+console.log(frutas[0]);
+
+
+// 33: Adicione o número 50 no final do array [10, 20, 30, 40]
+let arr = [10,20,30,40];
+arr.push(50)
+console.log(arr)
+
+// 34: Remova o último elemento do array [1, 2, 3, 4, 5]
+let arr2 = [10,20,30,40];
+arr2.pop
+console.log(arr2)
+
+
+// 35: Exiba quantos elementos tem o array [5, 10, 15, 20]
+let lista1 = [5, 10, 15, 20]
+quantos = 0
+for (let i = 0 ; i<lista1.length; i++){
+    quantos += 1
+}
+console.log(`Lista tem ${quantos} elementos`)
+
+// 36: Some todos os números do array [2, 4, 6, 8]
+let lista2 = [5, 10, 15, 20]
+function somaArray1(lista2){
+    total = 0;
+    for(let i = 0; i<lista2.length; i++){
+        total +=lista2[i];
+    }
+    return total;
+}
+
+console.log(somaArray1([5, 10, 15, 20]));
+console.log(`Lista tem ${total} elementos`)
+
+// 37: Multiplique cada elemento do array [1, 2, 3, 4] por 2
+let array3 = [1,2,3,4];
+let multiplicar = [];
+for(let i = 0; i<array3.length; i++){
+    multiplicar.push(array3[i] * 2);
+}
+console.log(multiplicar);
+
+
+// 38: Verifique se a fruta "laranja" existe no array ["maçã", "banana", "uva"]
+let array4 = ["maçã", "banana", "uva"]
+
+
+// 39: Exiba um por um os elementos do array ["azul", "verde", "amarelo"]
+
+// 40: Exiba o último elemento do array [100, 200, 300, 400, 500]
 
 
 //==============TERNÁRIO================//
@@ -245,6 +295,29 @@ idade2 <= 17 ? "Adolescente" :
 idade2 <= 59 ? "Adulto" : "Idoso";
 console.log(`A pessoa com ${idade2} anos, é ${verificadorIdade}`);
 
+// ==================== ATIVIDADES COM MATRIZ ====================
+
+// 41: Crie uma matriz 2x2 com os números 1, 2 na primeira linha e 3, 4 na segunda
+
+// 42: Exiba o elemento da linha 1, coluna 2 da matriz [[5, 6], [7, 8]]
+
+// 43: Exiba todos os elementos da matriz [[1, 2, 3], [4, 5, 6]]
+
+// 44: Some todos os números da matriz [[2, 4], [6, 8]]
+
+// 45: Crie uma matriz 3x3 com números de 1 a 9
+
+// 46: Exiba os elementos da diagonal principal da matriz [[1,2,3],[4,5,6],[7,8,9]]
+
+// 47: Altere o elemento da linha 0, coluna 1 da matriz [[1,2],[3,4]] para 10
+
+// 48: Exiba apenas a primeira linha da matriz [[10,20],[30,40],[50,60]]
+
+// 49: Exiba apenas os elementos da primeira coluna da matriz [[1,2],[3,4],[5,6]]
+
+// 50: Multiplique todos os elementos da matriz [[1,2],[3,4]] por 2
+
+
 // ==================== ATIVIDADES COM OBJETOS ====================
 
 // 51: Crie um objeto pessoa com nome "Ana" e idade 25
@@ -292,6 +365,8 @@ delete usuario2.telefone
 console.log("Depois", usuario2)
 
 // 56: Exiba todas as propriedades do objeto {marca: "Nike", tamanho: 42, cor: "preto"}
+let tenis = {marca: "Nike", tamanho: 42, cor: "preto"}
+console.log(tenis)
 
 // 57: Crie um objeto cachorro com nome "Rex" e um método latir que exibe "Au au!"
 
