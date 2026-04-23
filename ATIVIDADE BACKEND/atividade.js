@@ -298,24 +298,108 @@ console.log(`A pessoa com ${idade2} anos, é ${verificadorIdade}`);
 // ==================== ATIVIDADES COM MATRIZ ====================
 
 // 41: Crie uma matriz 2x2 com os números 1, 2 na primeira linha e 3, 4 na segunda
+console.log("criar matriz 2x2\n")
+let matriz2x2 = [
+    [1 , 2],
+    [3 , 4]
+]
+console.log(matriz2x2)
 
 // 42: Exiba o elemento da linha 1, coluna 2 da matriz [[5, 6], [7, 8]]
+console.log("Exibindo elemento da linha 1 coluna 2\n")
+let matrizL1C2 = [
+    [5 , 6],
+    [7 , 8]
+]
+console.log(matrizL1C2[0][1])
 
 // 43: Exiba todos os elementos da matriz [[1, 2, 3], [4, 5, 6]]
+console.log("Exibindo todos os elementos\n")
+let matriztodos = [
+    [1 , 2 , 3],
+    [4 , 5 , 6]
+];
+
+for(let i = 0; i < matriztodos.length; i++){
+for(let j = 0; j < matriztodos[i].length; j++){
+    console.log(`Elementos [${i}][${j}] = ${matriztodos[i][j]}`)
+}
+
+}
 
 // 44: Some todos os números da matriz [[2, 4], [6, 8]]
+let matrizsoma = [
+    [2 , 4],
+    [6 , 8]
+]
+
+let matrizsoma2 = 0;
+
+for(let i = 0; i<matrizsoma.length; i++){
+    for(let j = 0; j<matrizsoma[i].length; j++){
+        matrizsoma2 = matrizsoma2 + matrizsoma[i][j]
+    }
+}
+
+console.log(`Soma dos elementos ${matrizsoma2}`)
 
 // 45: Crie uma matriz 3x3 com números de 1 a 9
+console.log("criar matriz 3x3\n")
+let matriz3x3 = [
+    [1 , 2 , 3],
+    [4 , 5 , 6],
+    [7 , 8 , 9]
+]
+console.log(matriz3x3)
 
 // 46: Exiba os elementos da diagonal principal da matriz [[1,2,3],[4,5,6],[7,8,9]]
+console.log("exibir itens na diagonal\n")
+let matrizdiagonal = [
+    [1 , 2 , 3],
+    [4 , 5 , 6],
+    [7 , 8 , 9]
+]
+
+for(let i = 0; i<matrizdiagonal.length; i++){
+    console.log(matrizdiagonal[i][i]);
+}
 
 // 47: Altere o elemento da linha 0, coluna 1 da matriz [[1,2],[3,4]] para 10
 
 // 48: Exiba apenas a primeira linha da matriz [[10,20],[30,40],[50,60]]
+console.log("exibir a primeira linha\n")
+let matrizL1 = [
+    [10 , 20],
+    [30 , 40],
+    [50 , 60]
+]
+console.log(matrizL1[0])
 
 // 49: Exiba apenas os elementos da primeira coluna da matriz [[1,2],[3,4],[5,6]]
+console.log("exibir a primeira coluna\n")
+let matrizC1 = [
+    [1 , 2],
+    [3 , 4],
+    [5 , 6]
+]
+
+for(let i = 0; i<matrizC1.length; i++){
+    console.log(matrizC1[i][0])
+}
 
 // 50: Multiplique todos os elementos da matriz [[1,2],[3,4]] por 2
+let matrizX2 = [
+    [1 , 2],
+    [3 , 4]
+]
+
+for(let i = 0; i<matrizX2.length; i++){
+for(let j = 0; j<matrizX2[i].length; j++){
+    multimatriz = 2 * matrizX2[i][j]
+    console.log(multimatriz)
+}
+}
+
 
 
 // ==================== ATIVIDADES COM OBJETOS ====================
@@ -369,6 +453,12 @@ let tenis = {marca: "Nike", tamanho: 42, cor: "preto"}
 console.log(tenis)
 
 // 57: Crie um objeto cachorro com nome "Rex" e um método latir que exibe "Au au!"
+let cachorro = {
+    nome: "Rex",
+    latir: "Au Au!"
+}
+
+console.log(`o cachorro ${cachorro.nome} está latindo, ele faz ${cachorro.latir}`)
 
 // 58: Crie um objeto aluno com nome "Lucas" e notas [8, 7, 9]
 
