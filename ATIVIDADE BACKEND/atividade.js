@@ -500,15 +500,12 @@ frutas1.forEach(n => console.log(n,"\n"))
 
 /*63. some todos os valores e mostre o resultado
 preços = [10,30,50,60]; */
-let preços = [10,30,50,60]
-preços.forEach(function(n,preços){
-    n = 0;
-    for(let i = 0; i<preços.length;i++){
-        n += preços[i]
-        console.log(n)
-    }
+let precos = [10,30,50,60]
+somapreco = 0
+precos.forEach(function(preco1){
+    somapreco += preco1
 })
-
+console.log(somapreco)
 
 
 
