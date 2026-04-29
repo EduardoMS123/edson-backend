@@ -466,4 +466,50 @@ console.log(`o cachorro ${cachorro.nome} está latindo, ele faz ${cachorro.latir
 
 // 60: Crie um array com 3 objetos de produtos (nome e preço) e exiba todos
 
+// Exercícios ForEach //
+
+//61.
+console.log("==Exercícis ForEach==")
+let numFE = [1,2,3,4]
+console.log("Usando for")
+for(let i = 0; i < numFE.length; i ++){
+    console.log(numFE[i]);
+}
+console.log("Usando foreach")
+numFE.forEach(function(n){
+    console.log(n)
+})
+
+console.log("ForEach Arrow modo seta")
+numFE.forEach(n => console.log(n))
+
+/*62. msotre os valores no terminal:
+dados array
+let frutas ["Maçã", "Banana","Uva","Abacate"];
+utilizar foreach função anônima e função arrow*/
+console.log("===Exercicio===")
+let frutas1 = ["Maçã", "Banana","Uva","Abacate"];
+
+console.log("Usando a função anônima")
+frutas1.forEach(function(n){
+    console.log(n,"\n")
+})
+
+console.log("Usando função arrow")
+frutas1.forEach(n => console.log(n,"\n"))
+
+/*63. some todos os valores e mostre o resultado
+preços = [10,30,50,60]; */
+let preços = [10,30,50,60]
+preços.forEach(function(n,preços){
+    n = 0;
+    for(let i = 0; i<preços.length;i++){
+        n += preços[i]
+        console.log(n)
+    }
+})
+
+
+
+
 
