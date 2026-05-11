@@ -507,6 +507,34 @@ precos.forEach(function(preco1){
 })
 console.log(somapreco)
 
+/* faça a soma do array*/
+let arr3 = [2,5,6,8]
+console.log("FOR")
+let soma1 = 0
+for(let i = 0; i<arr3.length;i++){
+soma1 += arr3[i];
+}
+console.log(soma1)
+
+console.log("FOR EACH ARROW")
+let soma2 = 0
+arr3.forEach(n => soma2 += n);
+console.log(soma2)
+
+
+/*exercicio de pares */
+let numeros = [1,2,3,4,5,6,7,8]
+console.log("for")
+for(let i = 0; i<numeros.length; i++){
+    if(numeros[i]%2 === 0){
+        console.log(numeros[i])
+    }
+}
+
+console.log("for each arrow")
+numeros.forEach(n => {
+    if(n%2 === 0) console.log(n)
+})
 
 
 
