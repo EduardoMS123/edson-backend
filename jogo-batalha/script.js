@@ -13,11 +13,11 @@ function lutar(){
 
     switch(classe){
         case "Guerreiro": 
-        if(arma.toLowerCase() === "espada" && dado > 15){
-            resultado += " <span class = 'sucesso'> SUCESSO: Você DECAPITOU o dragão com uma espada!</span>"
+        if(arma.toLowerCase() === "espada" && dado === 20){
+            resultado += " <span class = 'critico'> CRITICO: Você DECAPITOU o dragão com uma espada!</span>"
             log.innerHTML = resultado
         
-        }else if(dado > 5){
+        }else if(dado > 10){
             resultado += "<span class = 'sucesso'> VITÓRIA: você MERENDOU ele na porrada, boaaa!</span>"
             log.innerHTML = resultado
 
@@ -28,11 +28,11 @@ function lutar(){
         };
         break;
         case "Mago": 
-        if(arma.toLowerCase() === "cajado" && dado > 15){
-            resultado += "<span class = 'sucesso'> SUCESSO: Você matou o dragão com uma macumba das locas!</span>"
+        if(arma.toLowerCase() === "cajado" && dado === 20){
+            resultado += "<span class = 'critico'> CRITICO: Você matou o dragão com uma macumba das locas!</span>"
             log.innerHTML = resultado
         
-        }else if(dado > 5){
+        }else if(dado > 10){
             resultado += "<span class = 'sucesso'> VITÓRIA: você ESTOUROU o dragão com uma magia básica, boaaa!</span>"
             log.innerHTML = resultado
 
@@ -43,11 +43,11 @@ function lutar(){
         };
         break;
         case "Arqueiro": 
-        if(arma.toLowerCase() === "Arco" && dado > 15){
-            resultado += "<span class = 'sucesso'> SUCESSO: Você matou o dragão com técnicas incriveis!!/span>"
+        if(arma.toLowerCase() === "Arco" && dado === 20){
+            resultado += "<span class = 'critico'> CRITICO: Você matou o dragão com técnicas incriveis!!/span>"
             log.innerHTML = resultado
         
-        }else if(dado > 5){
+        }else if(dado > 10){
             resultado += "<span class = 'sucesso'> VITÓRIA: você matou o dragão com um arco normal, boaaa!</span>"
             log.innerHTML = resultado
 
