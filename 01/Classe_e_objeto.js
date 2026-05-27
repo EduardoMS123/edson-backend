@@ -6,12 +6,19 @@ class heroi{
 };
 
 function criarHeroi(){
-//capturando oqueo usuario digitou/selecionou na tela
+//capturando o que o usuario digitou/selecionou na tela
    const nomeDigitado = document.getElementById('nomeInput').value;
    const classeSelecionada = document.getElementById('classeSelect').value;
-//crianddo o objeo dinamicamente com os valores dos campos
+//criando o objeo dinamicamente com os valores dos campos
 
    const novoHeroi = new heroi(nomeDigitado, classeSelecionada);
+
+//exibindo na tela atraves das propriedades do objeto
+   document.getElementById('resultado').style.display = "block";
+   document.getElementById('dadosHeroi').innerHTML = `
+   Nome: <strong>${novoHeroi.nome}</strong><br>
+   Classe: <strong>${novoHeroi.classe}</strong>`;
+
 
 
 };
